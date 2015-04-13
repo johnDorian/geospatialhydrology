@@ -1,8 +1,8 @@
 ---
-title       : Mixing presentation
+title       : Mixing presentation about something which is really long
 subtitle    : A presentation about mixing
 author      : Jason Lessels
-job         : 
+job         : my job title
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : solarized_light      # 
