@@ -41,6 +41,7 @@ $(function() {
 
 ## Slide 2
 
+<iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~johnDorian/61.embed?width=640&height=480" ></iframe>
 
 
 
