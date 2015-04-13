@@ -12,8 +12,9 @@
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
-  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />
   <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<link rel=stylesheet href="./assets/css/titlepage.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -36,17 +37,38 @@
     <h2>A presentation about mixing</h2>
     <p>Jason Lessels<br/></p>
   </hgroup>
+    <a href="https://github.com/johnDorian/geospatialhydrology/zipball/gh-pages" class="example">
+     Download
+    </a>
   <article></article>  
 </slide>
     
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Read-And-Delete</h2>
-  </hgroup>
   <article data-timings="">
-    <ol>
+    <!-- Limit image width and height -->
+
+<style type='text/css'>
+img {
+    max-height: 560px;
+    max-width: 964px;
+}
+</style>
+
+<!-- Center image on slide -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+
+<script type='text/javascript'>
+$(function() {
+    $("p:has(img)").addClass('centered');
+});
+</script>
+
+<h2>Read-And-Delete</h2>
+
+<ol>
 <li>Edit YAML front matter</li>
 <li>Write using R Markdown</li>
 <li>Use an empty line followed by three dashes to separate slides!</li>
@@ -72,7 +94,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title=''>
          1
       </a>
     </li>
