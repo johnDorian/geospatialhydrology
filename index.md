@@ -68,15 +68,21 @@ $(function() {
 
 ---
 
-## Spatial trends
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=100%>
-
+## Temporal trends of the tracers
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/time_samples.jpg", width=100%>
 
 
 ---
 
-## Spatial trends
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/time_samples.jpg", width=100%>
+## Spatial trends of the tracers
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=110%>
+
+### Observations so far..
+* Seasonality can be seen in spatial and temporal samples.
+* The hetergoetity is dampeend at the catchment.
+* Great spatial variablity in all tracers.
+
+
 
 
 
