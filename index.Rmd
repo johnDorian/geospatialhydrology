@@ -63,10 +63,13 @@ $(function() {
 ## Climating conditions
 
 
-
-
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=100%>
 
+
+---
+
+## Spatial trends
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=100%>
 
 
 
