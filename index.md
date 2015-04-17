@@ -79,7 +79,15 @@ $(function() {
 
 ---
 
-## LIDAR data. 
+## LiDAR derived Topograhic indices
+
+1. Topographic wetness index (TWI)
+2. Slope
+3. Aspect
+4. Contributing area
+5. Topographic position index
+6. Topographic roughness index
+  
 
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=100%>
 
