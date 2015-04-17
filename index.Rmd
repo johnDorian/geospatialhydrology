@@ -1,8 +1,8 @@
 ---
-title       : Mixing presentation about something which is really long
-subtitle    : A presentation about mixing
+title       : Geospatial methods and tracers
+subtitle    : Revealing mxing in riparian welands
 author      : Jason Lessels
-job         : my job title
+job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : solarized_light      # 
@@ -20,6 +20,13 @@ img {
     max-height: 560px;
     max-width: 964px;
 }
+strong {
+  font-weight: bold;
+  color: red;
+}
+em {
+  font-style: italic
+}
 </style>
 
 <!-- Center image on slide -->
@@ -31,17 +38,56 @@ $(function() {
 </script>
 
 
-## Read-And-Delete
+## Study objectives
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+### Overview
+* Repeated sampling of ~94 pools within an extended riprarian zone. 
+* Sampling campaigns targetted different meteorological conditions.
+* High resolution LiDAR survey provided detailed landscape description of the catchment.
+
+
+### Aims
+1.  What can different **tracers** reveal about the spatial heterogeneity of water sources within an extended riparian zone?
+2. Can we use geostatistical methods in combination with LiDAR data to classify **source areas** and **mixing zones** within a riparian zone?
+3.	How do variable **meteorological** conditions affect the spatial patterns of water sources and the hydrological functioning at the catchment scale? 
+
 
 --- .class #id 
 
-## Slide 2
+## Climating conditions
 
-<iframe width="640" height="480" frameborder="0" seamless="seamless" scrolling="no" src="https://plot.ly/~johnDorian/61.embed?width=640&height=480" ></iframe>
+
+
+---
+
+## Sampling - a map showing the locations
+
+Briefly outilne the sampling that was undertaken.
+
+---
+
+## LIDAR data. 
+
+---
+
+## Methods undertaken
+linear model + variogram for spatial component
+
+---
+
+## Linear model results - no strong variable
+
+---
+
+## Maps of estiamtes
+
+---
+
+## CLuster results
+
+---
+
+## Conclusions
 
 
 
