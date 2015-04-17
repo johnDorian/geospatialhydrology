@@ -56,8 +56,11 @@ $(function() {
 
 ## Climating conditions
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.svg" width="90%" height="90%"/>
 
+
+<object data="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.svg" type="image/svg+xml">
+  <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.svg" width="90%" height="90%"/>
+</object>
 ---
 
 ## Sampling - a map showing the locations
