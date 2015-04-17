@@ -51,23 +51,22 @@ $(function() {
 
 
 
+---
+
+## Sampling
 
 
 
---- &twocol w1:65% w2:30%
+
+---
+
 ## Climating conditions
 
 
 
-*** =left
+
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=82%>
 
-*** =right
-
-
-- point 1
-- point 2
-- point 3
 
 
 
