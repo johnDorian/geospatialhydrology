@@ -49,13 +49,26 @@ $(function() {
 3.	How do variable **meteorological** conditions affect the spatial patterns of water sources and the hydrological functioning at the catchment scale? 
 
 
---- .class #id 
 
+
+
+
+
+--- &twocol w1:65% w2:30%
 ## Climating conditions
 
 
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.jpg", width=50%, height=50%>
+*** =left
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.jpg", width=82%>
+
+*** =right
+
+
+- point 1
+- point 2
+- point 3
+
 
 
 ---
