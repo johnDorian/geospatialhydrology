@@ -77,10 +77,12 @@ $(function() {
 
 
 
-
 ---
 
 ## LIDAR data. 
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.jpg", width=100%>
+
 
 ---
 
