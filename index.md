@@ -65,7 +65,7 @@ $(function() {
 
 
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=82%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=100%>
 
 
 
