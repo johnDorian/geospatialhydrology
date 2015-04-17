@@ -56,7 +56,7 @@ $(function() {
 
 ## Climating conditions
 
-![timeseries](https://github.com/johnDorian/geospatialhydrology/blob/gh-pages/figs/timeseries_moded.eps)
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.jpg" width="70%" height="80%"/>
 
 ---
 
