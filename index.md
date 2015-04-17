@@ -72,9 +72,11 @@ $(function() {
 
 ---
 
-## Sampling - a map showing the locations
+## Spatial trends
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/time_samples.jpg", width=100%>
 
-Briefly outilne the sampling that was undertaken.
+
+
 
 ---
 
