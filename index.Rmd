@@ -55,7 +55,7 @@ $(function() {
 
 
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.jpg">
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.jpg", width=50%, height=50%>
 
 
 ---
