@@ -58,9 +58,9 @@ $(function() {
 
 
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.svg" width= "90%">
 
 
+<object type="image/svg+xml" data="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/timeseries_moded.svg" width="100%" height="100%">
 ---
 
 ## Sampling - a map showing the locations
