@@ -16,10 +16,7 @@ github      :
 ---
 <!-- Limit image width and height -->
 <style type='text/css'>
-img {
-    max-height: 560px;
-    max-width: 964px;
-}
+
 strong {
   font-weight: bold;
   color: red;
