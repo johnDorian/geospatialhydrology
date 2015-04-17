@@ -55,7 +55,7 @@ $(function() {
 
 ## Sampling
 
-
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/sampling_loc_map_w_zones.jpg", width=100%>
 
 
 ---
