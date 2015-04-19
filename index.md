@@ -24,6 +24,10 @@ strong {
 em {
   font-style: italic
 }
+
+
+
+
 </style>
 
 <!-- Center image on slide -->
@@ -75,14 +79,12 @@ $(function() {
 ---
 
 ## Spatial trends of the tracers
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=110%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=105%>
 
 ### Observations so far..
 * Seasonality can be seen in spatial and temporal samples.
 * The hetergoetity is dampeend at the catchment.
 * Great spatial variablity in all tracers.
-
-
 
 
 
@@ -103,8 +105,14 @@ $(function() {
 
 ---
 
-## Methods undertaken
-linear model + variogram for spatial component
+## Methods
+
+1. Use stepwise regression to find the best linear model.
+2. Fit a variogram to the residuals of the model
+3. Predict each tracer by combining the linear model estimates and the spatial random errors.
+4. Identify statistical outliers using based on the spatial errors.
+5. Use k-means clustering for each sampling campaign to locate zones of interest.
+
 
 ---
 
@@ -113,6 +121,10 @@ linear model + variogram for spatial component
 ---
 
 ## Maps of estiamtes
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions_same_scale.png", width=100%>
+
+
+
 
 ---
 
