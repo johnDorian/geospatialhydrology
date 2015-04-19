@@ -91,7 +91,7 @@ $(function() {
 
 ---
 
-## LiDAR derived Topograhic indices
+## LiDAR derived topograhic indices
 
 1. Topographic wetness index (TWI)
 2. Slope
