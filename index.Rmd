@@ -117,20 +117,21 @@ $(function() {
 
 ## Linear model and residuals
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=100%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=45%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=45%>
+
 ---
 
 ## Model variogram and outliers
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=100%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=45%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=45%>
 
 ---
 
 ## Final predictions
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/final_est.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/final_est.png", width=50%>
 
 ---
 
