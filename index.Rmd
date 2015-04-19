@@ -6,7 +6,7 @@ job         :
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : solarized_light      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 github      :
@@ -79,9 +79,9 @@ $(function() {
 ---
 
 ## Spatial trends of the tracers
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=105%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=100%>
 
-### Observations so far..
+### Observations so far...
 * Seasonality can be seen in spatial and temporal samples.
 * The hetergoetity is dampeend at the catchment.
 * Great spatial variablity in all tracers.
@@ -107,18 +107,57 @@ $(function() {
 
 ## Methods
 
-1. Use stepwise regression to find the best linear model.
-2. Fit a variogram to the residuals of the model
-3. Predict each tracer by combining the linear model estimates and the spatial random errors.
-4. Identify statistical outliers using based on the spatial errors.
-5. Use k-means clustering for each sampling campaign to locate zones of interest.
-
-
-
+> 1. Use stepwise regression to find the best linear model.
+> 2. Fit a variogram to the residuals of the model
+> 3. Predict each tracer by combining the linear model estimates and the spatial random errors.
+> 4. Identify statistical outliers using based on the spatial errors.
+> 5. Use k-means clustering for each sampling campaign to locate zones of interest.
 
 ---
 
+## Linear model and residuals
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=100%>
+---
+
+## Model variogram and outliers
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=100%>
+
+---
+
+## Final predictions
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/final_est.png", width=100%>
+
+---
+
+## Linear model
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions.png", width=100%>
+
+---
+
+
+
 ## Linear model results - no strong variable
+
+| Variable  | Sample date | 	$\beta_0$ | 	$\beta_{slope}$ | 	$\beta_{TRI}$ | 	$\beta_{SWI}$ | 	$\beta_{ELEV}$ |
+| --- | --- | --- | --- | --- | --- | --- | 
+| | Aug 2012  | $4.77^{*}$ | - |   $-19.57^{*}$ | 	-	 |  - |
+| Deuterium | Feb 2013  | $8.55^{*}$ | 	$-0.19^{*}$ | 	- |	$-0.19^{*}$	 | $-0.02$ | 
+| 	| May 2013	| $4.53^{*}$	| $-0.21^{*}$ | 	- | 	-	 | - | 
+| | Aug 2012 | $98.84^{*}$ |	- |	-	| -	| $-0.19$ | 
+| Gran alkalinity	| Feb 2013 | $50.98^{*}$ | 	- | $22.92$ | 	- | 	$-0.12$ | 
+| | May 2013 | $64.69^{*}$	| -	| -	| -| 	$-0.14$ |
+| | Aug 2012 |	$-5.48^{*}$ | 	$-0.09^{*}$ | 	- |	- |	$0.03^{*}$ |
+DOC | 	Feb 2013 |	$-0.89$ | 	- | 	$-3.36^{*}$	| -| 	$0.01^{*}$|
+| |	May 2013 | $2.59^{*}$ | -	| $-2.71$	| -	| -|
+
+
+
 
 ---
 
@@ -132,7 +171,7 @@ $(function() {
 
 ## Cluster results
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/cluster.png", width=90%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/cluster.png", width=110%>
 
 
 ---
