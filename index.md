@@ -100,7 +100,7 @@ $(function() {
 6. Topographic roughness index
   
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=90%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions.png", width=90%>
 
 
 ---
