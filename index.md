@@ -100,7 +100,7 @@ $(function() {
 6. Topographic roughness index
   
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions.png", width=90%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=100%>
 
 
 ---
@@ -123,7 +123,7 @@ $(function() {
 ---
 
 ## Spatial estimates
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions_same_scale.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions.png", width=100%>
 
 
 
@@ -131,6 +131,9 @@ $(function() {
 ---
 
 ## Cluster results
+
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/cluster.png", width=90%>
+
 
 ---
 
