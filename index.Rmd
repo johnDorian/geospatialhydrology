@@ -100,7 +100,7 @@ $(function() {
 6. Topographic roughness index
   
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=100%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=90%>
 
 
 ---
@@ -114,13 +114,15 @@ $(function() {
 5. Use k-means clustering for each sampling campaign to locate zones of interest.
 
 
+
+
 ---
 
 ## Linear model results - no strong variable
 
 ---
 
-## Maps of estiamtes
+## Spatial estimates
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/predictions_same_scale.png", width=100%>
 
 
@@ -128,7 +130,7 @@ $(function() {
 
 ---
 
-## CLuster results
+## Cluster results
 
 ---
 
