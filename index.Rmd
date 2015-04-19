@@ -1,6 +1,6 @@
 ---
 title       : Geospatial methods and tracers
-subtitle    : Revealing mxing in riparian welands
+subtitle    : Revealing mixing in riparian wetlands
 author      : Jason Lessels
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -42,12 +42,13 @@ $(function() {
 ## Study objectives
 
 ### Overview
-* Repeated sampling of ~94 pools within an extended riprarian zone. 
-* Sampling campaigns targetted different meteorological conditions.
+* Repeated sampling of ~94 surface water and an additional 10 stream sites 
+* Three tracers: $\delta^{2}\text{H}$ , gran-alkalinity (GA) and dissolved organic carbon (DOC)
+* Sampling campaigns targeted different meteorological conditions.
 * High resolution LiDAR survey provided detailed landscape description of the catchment.
 
 
-### Aims
+### Objectives
 1.  What can different **tracers** reveal about the spatial heterogeneity of water sources within an extended riparian zone?
 2. Can we use geostatistical methods in combination with LiDAR data to classify **source areas** and **mixing zones** within a riparian zone?
 3.	How do variable **meteorological** conditions affect the spatial patterns of water sources and the hydrological functioning at the catchment scale? 
@@ -64,7 +65,7 @@ $(function() {
 
 ---
 
-## Climating conditions
+## Climatic conditions
 
 
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=100%>
@@ -72,19 +73,19 @@ $(function() {
 
 ---
 
-## Temporal trends of the tracers
+## Temporal trends
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/time_samples.jpg", width=100%>
 
 
 ---
 
-## Spatial trends of the tracers
+## Spatial trends
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=100%>
 
 ### Observations so far...
 * Seasonality can be seen in spatial and temporal samples.
-* The hetergoetity is dampeend at the catchment.
-* Great spatial variablity in all tracers.
+* The heterogeneity is dampened at the catchment.
+* Great spatial variability in all tracers.
 
 
 
@@ -96,8 +97,8 @@ $(function() {
 2. Slope
 3. Aspect
 4. Contributing area
-5. Topographic position index
-6. Topographic roughness index
+5. Topographic position index (TPI)
+6. Topographic roughness index (TRI)
   
 
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=100%>
@@ -107,25 +108,25 @@ $(function() {
 
 ## Methods
 
-> 1. Use stepwise regression to find the best linear model.
-> 2. Fit a variogram to the residuals of the model
-> 3. Predict each tracer by combining the linear model estimates and the spatial random errors.
-> 4. Identify statistical outliers using based on the spatial errors.
+> 1. Use stepwise regression to find the best linear model (fixed effects).
+> 2. Fit a variogram to the residuals of the linear model (random effects).
+> 3. Predict each tracer by combining the fixed and random effects.
+> 4. Identify statistical outliers based on random effects of the model.
 > 5. Use k-means clustering for each sampling campaign to locate zones of interest.
 
 ---
 
-## Linear model and residuals
+## Methods (cont.)
 
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=35%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=38%>
 
 
 ---
 
-## Final predictions
+## Methods (cont.)
 
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/final_est.png", width=70%>
 
@@ -146,7 +147,8 @@ $(function() {
 DOC | 	Feb 2013 |	$-0.89$ | 	- | 	$-3.36^{*}$	| -| 	$0.01^{*}$|
 | |	May 2013 | $2.59^{*}$ | -	| $-2.71$	| -	| -|
 
-
+* Elevation was found one the most dominant topographic index.
+* TWI was only included in one of the models
 
 
 ---
@@ -159,14 +161,29 @@ DOC | 	Feb 2013 |	$-0.89$ | 	- | 	$-3.36^{*}$	| -| 	$0.01^{*}$|
 
 ---
 
-## Cluster results
+## K-means cluster results
 
 <img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/cluster.png", width=100%>
+
+* The organic rich soils corresponded with the soil water classified areas.
+* The influence of ground water was greatest during the cooler period.
+* Extent of the mixed water reflect the climatic conditions. 
 
 
 ---
 
 ## Conclusions
+
+
+
+
+* The three tracers provided information on different controlling processes.
+
+* The spatial estimates provided vaulable information for identifying areas of significance.
+
+* Many of the topographic indices were not related to any tracers and did not help explain the heterogeneity of the tracers.
+
+* The heterogeneity was present for all three sampling occasions, but was more pronounced in the warmer months. 
 
 
 

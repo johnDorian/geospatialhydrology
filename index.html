@@ -34,7 +34,7 @@
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
     <h1>Geospatial methods and tracers</h1>
-    <h2>Revealing mxing in riparian welands</h2>
+    <h2>Revealing mixing in riparian wetlands</h2>
     <p>Jason Lessels<br/></p>
   </hgroup>
   <!--
@@ -81,12 +81,13 @@ $(function() {
 <h3>Overview</h3>
 
 <ul>
-<li>Repeated sampling of ~94 pools within an extended riprarian zone. </li>
-<li>Sampling campaigns targetted different meteorological conditions.</li>
+<li>Repeated sampling of ~94 surface water and an additional 10 stream sites </li>
+<li>Three tracers: \(\delta^{2}\text{H}\) , gran-alkalinity (GA) and dissolved organic carbon (DOC)</li>
+<li>Sampling campaigns targeted different meteorological conditions.</li>
 <li>High resolution LiDAR survey provided detailed landscape description of the catchment.</li>
 </ul>
 
-<h3>Aims</h3>
+<h3>Objectives</h3>
 
 <ol>
 <li> What can different <strong>tracers</strong> reveal about the spatial heterogeneity of water sources within an extended riparian zone?</li>
@@ -111,7 +112,7 @@ $(function() {
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Climating conditions</h2>
+    <h2>Climatic conditions</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/climate.jpg", width=100%></p>
@@ -122,7 +123,7 @@ $(function() {
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h2>Temporal trends of the tracers</h2>
+    <h2>Temporal trends</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/time_samples.jpg", width=100%></p>
@@ -133,7 +134,7 @@ $(function() {
 
 <slide class="" id="slide-5" style="background:;">
   <hgroup>
-    <h2>Spatial trends of the tracers</h2>
+    <h2>Spatial trends</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/iso_sample_com.png", width=100%></p>
@@ -142,8 +143,8 @@ $(function() {
 
 <ul>
 <li>Seasonality can be seen in spatial and temporal samples.</li>
-<li>The hetergoetity is dampeend at the catchment.</li>
-<li>Great spatial variablity in all tracers.</li>
+<li>The heterogeneity is dampened at the catchment.</li>
+<li>Great spatial variability in all tracers.</li>
 </ul>
 
   </article>
@@ -160,8 +161,8 @@ $(function() {
 <li>Slope</li>
 <li>Aspect</li>
 <li>Contributing area</li>
-<li>Topographic position index</li>
-<li>Topographic roughness index</li>
+<li>Topographic position index (TPI)</li>
+<li>Topographic roughness index (TRI)</li>
 </ol>
 
 <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/covariates.png", width=100%></p>
@@ -176,10 +177,10 @@ $(function() {
   </hgroup>
   <article data-timings="">
     <ol class = "build incremental">
-<li>Use stepwise regression to find the best linear model.</li>
-<li>Fit a variogram to the residuals of the model</li>
-<li>Predict each tracer by combining the linear model estimates and the spatial random errors.</li>
-<li>Identify statistical outliers using based on the spatial errors.</li>
+<li>Use stepwise regression to find the best linear model (fixed effects).</li>
+<li>Fit a variogram to the residuals of the linear model (random effects).</li>
+<li>Predict each tracer by combining the fixed and random effects.</li>
+<li>Identify statistical outliers based on random effects of the model.</li>
 <li>Use k-means clustering for each sampling campaign to locate zones of interest.</li>
 </ol>
 
@@ -189,13 +190,13 @@ $(function() {
 
 <slide class="" id="slide-8" style="background:;">
   <hgroup>
-    <h2>Linear model and residuals</h2>
+    <h2>Methods (cont.)</h2>
   </hgroup>
   <article data-timings="">
-    <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=35%>
-<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=35%></p>
+    <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/xy_fit.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/residuals.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/variogram.png", width=38%>
+<img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/outliers.png", width=38%></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -203,7 +204,7 @@ $(function() {
 
 <slide class="" id="slide-9" style="background:;">
   <hgroup>
-    <h2>Final predictions</h2>
+    <h2>Methods (cont.)</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/final_est.png", width=70%></p>
@@ -311,6 +312,11 @@ $(function() {
 </tr>
 </tbody></table>
 
+<ul>
+<li>Elevation was found one the most dominant topographic index.</li>
+<li>TWI was only included in one of the models</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -328,10 +334,16 @@ $(function() {
 
 <slide class="" id="slide-12" style="background:;">
   <hgroup>
-    <h2>Cluster results</h2>
+    <h2>K-means cluster results</h2>
   </hgroup>
   <article data-timings="">
     <p><img src="https://raw.githubusercontent.com/johnDorian/geospatialhydrology/gh-pages/figs/cluster.png", width=100%></p>
+
+<ul>
+<li>The organic rich soils corresponded with the soil water classified areas.</li>
+<li>The influence of ground water was greatest during the cooler period.</li>
+<li>Extent of the mixed water reflect the climatic conditions. </li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -342,7 +354,13 @@ $(function() {
     <h2>Conclusions</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ul>
+<li><p>The three tracers provided information on different controlling processes.</p></li>
+<li><p>The spatial estimates provided vaulable information for identifying areas of significance.</p></li>
+<li><p>Many of the topographic indices were not related to any tracers and did not help explain the heterogeneity of the tracers.</p></li>
+<li><p>The heterogeneity was present for all three sampling occasions, but was more pronounced in the warmer months. </p></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -365,19 +383,19 @@ $(function() {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Climating conditions'>
+        data-slide=3 title='Climatic conditions'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Temporal trends of the tracers'>
+        data-slide=4 title='Temporal trends'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Spatial trends of the tracers'>
+        data-slide=5 title='Spatial trends'>
          5
       </a>
     </li>
@@ -395,13 +413,13 @@ $(function() {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Linear model and residuals'>
+        data-slide=8 title='Methods (cont.)'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Final predictions'>
+        data-slide=9 title='Methods (cont.)'>
          9
       </a>
     </li>
@@ -419,7 +437,7 @@ $(function() {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Cluster results'>
+        data-slide=12 title='K-means cluster results'>
          12
       </a>
     </li>
