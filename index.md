@@ -108,11 +108,12 @@ $(function() {
 
 ## Methods
 
-> 1. Use stepwise regression to find the best linear model (fixed effects).
-> 2. Fit a variogram to the residuals of the linear model (random effects).
-> 3. Predict each tracer by combining the fixed and random effects.
-> 4. Identify statistical outliers based on random effects of the model.
-> 5. Use k-means clustering for each sampling campaign to locate zones of interest.
+1. Transform the observations using a log or square root transformation.
+1. Use stepwise regression to find the best linear model (fixed effects).
+2. Fit a variogram to the residuals of the linear model (random effects).
+3. Predict each tracer by combining the fixed and random effects.
+4. Identify statistical outliers based on random effects of the model.
+5. Use k-means clustering for each sampling campaign to locate zones of interest.
 
 ---
 
@@ -177,7 +178,10 @@ DOC | 	Feb 2013 |	$-0.89$ | 	- | 	$-3.36^{*}$	| -| 	$0.01^{*}$|
 
 
 
-* The three tracers provided information on different controlling processes.
+* The three tracers provided information on different controlling processes:
+  * $\delta^{2}\text{H}$ : **evaporative** and **ground water sources**
+  * GA: **ground water sources**
+  * DOC: **biological processes**
 
 * The spatial estimates provided vaulable information for identifying areas of significance.
 
